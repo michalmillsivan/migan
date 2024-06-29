@@ -12,24 +12,31 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg nav-light" style="background: radial-gradient(circle, rgba(20,223,219,1) 38%, rgba(14,190,220,1) 82%, rgba(5,135,221,1) 100%);">
+    <nav class="navbar navbar-expand-lg nav-light"
+        style="background: radial-gradient(circle, rgba(20,223,219,1) 38%, rgba(14,190,220,1) 82%, rgba(5,135,221,1) 100%);">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="display: flex; align-items: center;">
-                <img src="m_noBG.png" width="40" height="40" class="d-inline-block align-top" alt="">
-                <div>
-                    Migan
-                </div>
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="m_noBG.png" width="40" height="40" class="d-inline-block align-top" alt="Migan Logo">
+                <span class="ms-2">Migan</span>
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a id="home" class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a id="about" class="nav-link active" aria-current="page" href="#">About</a>
+                        <a id="personal_space" class="nav-link active" href="#">Personal Space</a>
                     </li>
                     <li class="nav-item">
-                        <a id="reports" class="nav-link active" aria-current="page" href="#">Reports</a>
+                        <a id="budget_managment" class="nav-link active" href="#">Budget Managment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="forum" class="nav-link active" href="#">Forum</a>
                     </li>
 
                     <form class="d-flex" role="search">
@@ -41,12 +48,17 @@
 
     </nav>
     <div class="container" id="main-content">
-<img src="a-colorful-but-simple-and-elegant-logo-to-a-company-called-migan-should-give-fun-and-easy-vibes--280018518.png" alt="">
+            <div id="chartBox" style="width: 700px;">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
     </div>
 
     <script src="./index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
